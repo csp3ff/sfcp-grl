@@ -1,0 +1,17 @@
+num_episode: 10
+total_time_steps: 10000
+arrival_rate: 0.6
+data_path: "dataset/requests/"
+model: "GCN_PPO"
+net_path: "dataset/topology/network.gpickle"
+GCN_PPO:
+  actor_lr: 0.001
+  batch_size: 4096
+  clip_epsilon: 0.2
+  critic_lr: 0.003
+  entropy_coef: 0.001
+  gamma: 0.99
+  lambda: 0.95
+  max_grad_norm: 0.8
+  mini_batch_size: 256
+  ppo_epochs: 5
